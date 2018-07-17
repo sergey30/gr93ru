@@ -500,7 +500,7 @@ body {
 }
 
 .guarantees-video {
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   margin: 30px auto;
 }
@@ -514,18 +514,9 @@ body {
   .guarantees-item {
     flex-direction: row;
   }
-
   .guarantees-item-img {
     margin: 20px;
   }
-
-  .guarantees-video {
-    max-width: 500px;
-  }
- }
-
-@media (min-width: 768px) {
-
  }
 
 @media (min-width: 992px) {
@@ -548,10 +539,9 @@ body {
 /*  */
 
 .review {
-  background-image: url(../img/review-bg.png);
-  background-repeat: no-repeat;
-  /* background-position: 500px 5px; */
-  padding: 30px 10px;
+  background-image: url(../img/review-bg-small.png);
+  background-size: cover;
+  padding: 60px 10px;
 }
 
 .review h2{
@@ -561,7 +551,7 @@ body {
 }
 
 .review-video {
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   margin: 30px auto;
 }
@@ -571,6 +561,42 @@ body {
   height: auto;
 }
 
+.review-description {
+  width: 220px;
+  margin: auto;
+}
+
+.review-shop,
+.review-client,
+.review-whattodo {
+  font-size: 12px;
+  color: #fff;
+}
+
+.review-price {
+  margin-top: 30px;
+  color: #06c007;
+  font-weight: bold;
+}
+
+.review-order {
+  width: 210px;
+  height: 50px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #06c007;
+  line-height: 50px;
+}
+
+.review-arrow-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
 
 .review-arrow-left-bg,
 .review-arrow-right-bg {
@@ -600,8 +626,165 @@ body {
   transform: rotate(45deg);
 }
 
+@media (min-width: 992px) {
+  .review {
+    background-image: url(../img/review-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -400px;
+  }
+  .review-container {
+    margin-bottom: 150px;
+    position: relative;
+  }
+  .review-video {
+    min-width: 509px;
+    position: absolute;
+    top: -44px;
+    left: 95px;
+  }
+  .review-description {
+    margin: 100px 0 0 700px;
+  }
+}
 
+@media (min-width: 1200px) {
+  .review {
+    background-position: -160px;
+    background-repeat: repeat-x;
+  }
+  .review-video {
+    left: 335px;
+  }
+  .review-description {
+    margin: 100px 0 0 900px;
+  }
+}
 
+/*  */
+
+.examples {
+  padding: 10px;
+}
+
+.examples h2{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.examples h2 span {
+  color: #06c007;
+}
+
+.examples-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.examples-arrow-left-bg,
+.examples-arrow-right-bg {
+  width: 55px;
+  height: 55px;
+  margin: 20px;
+  background-color: #efefef;
+  border-radius: 50%;
+}
+
+.examples-arrow-left {
+  width: 20px;
+  height: 20px;
+  margin: 17px 0 0 20px;
+  border-left: solid #06c007 5px;
+  border-bottom: solid #06c007 5px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.examples-arrow-right {
+  width: 20px;
+  height: 20px;
+  margin: 17px 0 0 15px;
+  border-right: solid #06c007 5px;
+  border-top: solid #06c007 5px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.examples-item-correct,
+.examples-item-wrong {
+  width: 300px;
+  margin: 30px 0;
+}
+
+.examples-correct-img,
+.examples-wrong-img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.examples-correct-img {
+  background-image: url(../img/examples-correct-bg.png);
+}
+
+.examples-wrong-img {
+  background-image: url(../img/examples-wrong-bg.png);
+}
+
+.examples-correct-bg,
+.examples-wrong-bg {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #efefef;
+  border-radius: 50%;
+}
+
+.examples-correct-logo {
+  width: 25px;
+  height: 17px;
+  margin: 17px 0 0 18px;
+  border-left: solid #06c007 5px;
+  border-bottom: solid #06c007 5px;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+
+.examples-wrong-logo {
+  width: 30px;
+  margin: 25px 0 0 12px;
+  border-top: solid #fe6a3c 5px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.examples-wrong-logo2 {
+  width: 30px;
+  margin: -5px 0 0 12px;
+  border-top: solid #fe6a3c 5px;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+
+.examples-correct-text,
+.examples-wrong-text {
+  margin: 10px;
+}
+
+.examples-correct-text span {
+  text-transform: uppercase;
+  color: #06c007;
+}
+
+.examples-wrong-text span {
+  text-transform: uppercase;
+  color: #fe6a3c;
+}
 
 
 
