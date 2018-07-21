@@ -88,37 +88,37 @@ var operationalPolygraphyAnswer4 = "";
 
 function removeCircleActive() {
   for (var i = 0; i < indicatorCircle.length; i++) {
-    indicatorCircle[i].classList.remove("operational-polygraphy-item-circle-active")
+    indicatorCircle[i].dataset.checked = false;
   }
 }
 
 operationalPolygraphyItems[0].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[0].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[0].dataset.checked = true;
 });
 operationalPolygraphyItems[1].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[1].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[1].dataset.checked = true;
 });
 operationalPolygraphyItems[2].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[2].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[2].dataset.checked = true;
 });
 operationalPolygraphyItems[3].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[3].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[3].dataset.checked = true;
 });
 operationalPolygraphyItems[4].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[4].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[4].dataset.checked = true;
 });
 operationalPolygraphyItems[5].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[5].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[5].dataset.checked = true;
 });
 operationalPolygraphyItems[6].addEventListener("click", function() {
   removeCircleActive();
-  indicatorCircle[6].classList.add("operational-polygraphy-item-circle-active");
+  indicatorCircle[6].dataset.checked = true;
 });
 
 function changeContentOperationalPolygraphy() {
