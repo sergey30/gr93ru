@@ -139,55 +139,55 @@
     <section class="services">
       <h1>наши услуги:</h1>
       <div class="services-row">
-        <div class="services-item business-cards">
+        <div class="services-item services-business-cards">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Визитки</div></a>
         </div>
-        <div class="services-item offset-printing">
+        <div class="services-item services-offset-printing">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Офсетная печать</div></a>
         </div>
-        <div class="services-item operational-polygraphy">
+        <div class="services-item services-operational-polygraphy">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Оперативная полиграфия</div></a>
         </div>
-        <div class="services-item plastic-cards">
+        <div class="services-item services-plastic-cards">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Пластиковые карты</div></a>
         </div>
       </div>
       <div class="services-row">
-        <div class="services-item large-format-printing">
+        <div class="services-item services-large-format-printing">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Широко-форматная печать</div></a>
         </div>
-        <div class="services-item sign-boards">
+        <div class="services-item services-sign-boards">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Вывески</div></a>
         </div>
-        <div class="services-item tablets">
+        <div class="services-item services-tablets">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Таблички, уголки, штендеры</div></a>
         </div>
-        <div class="services-item branding-cars">
+        <div class="services-item services-branding-cars">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Брендинг авто</div></a>
         </div>
       </div>
       <div class="services-row">
-        <div class="services-item souvenirs-promo">
+        <div class="services-item services-souvenirs-promo">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Сувениры промо</div></a>
         </div>
-        <div class="services-item souvenirs-business">
+        <div class="services-item services-souvenirs-business">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Сувениры бизнес</div></a>
         </div>
-        <div class="services-item souvenirs-vip">
+        <div class="services-item services-souvenirs-vip">
           <div class="services-img"></div>
           <a href="#"><div class="services-name">Сувениры VIP</div></a>
         </div>
-        <div class="services-item what-to-add">
+        <div class="services-item services-what-to-add">
           <div class="services-img"></div>
           <a href="#request-call"><div class="services-name">Чего-то не хватает?</div></a>
         </div>
@@ -322,7 +322,7 @@
       <div class="free-container">
         <div class="free-audit">
           <label for="free-audit" class="free-audit-title">
-            <div class="free-audit-circle free-circle-active"></div>
+            <div class="free-audit-circle"></div>
             <div class="free-audit-text">Аудит</div>
           </label>
           <div class="free-audit-img"></div>
@@ -338,9 +338,9 @@
           <div class="free-form-title">
             Оставьте данные и мы произведем <span>бесплатные</span> работы
           </div>
-          <form class="" action="index.html" method="post">
-            <input type="radio" name="free" value="free-audit" id="free-audit">
-            <input type="radio" name="free" value="free-layout" id="free-layout">
+          <form class="" action="index.html" method="get">
+            <input type="radio" name="free-audit-or-layout" value="free-audit" id="free-audit" checked>
+            <input type="radio" name="free-audit-or-layout" value="free-layout" id="free-layout" >
             <input type="text" name="" value="" placeholder="Ваше имя" required>
             <input type="tel" name="" value="" placeholder="Ваш телефон" required minlength="9" maxlength="14">
             <label for="free-form">
@@ -384,8 +384,6 @@
       </div>
     </footer>
 
-    <script src="assets/js/script.js">
-
-    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

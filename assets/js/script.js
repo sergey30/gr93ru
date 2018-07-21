@@ -1,4 +1,4 @@
-// slider
+// slider //////////////////////////////////////////////////////
 
 var rightToggle = document.querySelector(".slider-arrow-right-bg");
 var leftToggle = document.querySelector(".slider-arrow-left-bg");
@@ -7,8 +7,6 @@ var text = document.querySelectorAll(".slider-text");
 var control = document.querySelectorAll(".slider-control-item");
 
 var i = 0;
-
-rightToggle.addEventListener("click", pushRightToggle);
 
 function pushRightToggle() {
   title[i].classList.remove("slider-title-active");
@@ -23,8 +21,6 @@ function pushRightToggle() {
   control[i].classList.add("slider-control-item-active");
 }
 
-leftToggle.addEventListener("click", pushLeftToggle);
-
 function pushLeftToggle() {
   title[i].classList.remove("slider-title-active");
   text[i].classList.remove("slider-text-active");
@@ -38,4 +34,147 @@ function pushLeftToggle() {
   control[i].classList.add("slider-control-item-active");
 }
 
-// setInterval(pushRightToggle, 8000);
+if (rightToggle === true) {
+  rightToggle.addEventListener("click", pushRightToggle);
+  leftToggle.addEventListener("click", pushLeftToggle);
+  setInterval(pushRightToggle, 8000);
+}
+
+
+// free audit or layout ////////////////////////////////////
+var circleAudit = document.querySelector(".free-audit-circle");
+var circleLayout = document.querySelector(".free-layout-circle");
+var labelAudit = document.querySelector(".free-audit-title");
+var labelLayout = document.querySelector(".free-layout-title");
+var formRadioAudit = document.querySelector("#free-audit");
+var formRadioLayout = document.querySelector("#free-layout");
+
+if ((formRadioAudit === true) && (formRadioAudit.checked)) {
+  circleAudit.classList.add("free-circle-active");
+} else if ((formRadioLayout === true) && (formRadioLayout.checked)) {
+    circleLayout.classList.add("free-circle-active");
+}
+
+if (labelAudit === true) {
+  labelAudit.addEventListener("click", function() {
+    circleLayout.classList.remove("free-circle-active");
+    circleAudit.classList.add("free-circle-active");
+  })
+
+  labelLayout.addEventListener("click", function() {
+    circleAudit.classList.remove("free-circle-active");
+    circleLayout.classList.add("free-circle-active");
+  })
+}
+
+
+//polygraphy.html section operational-polygraphy  //////////////////
+
+var operationalPolygraphyItems = document.querySelectorAll(".operational-polygraphy-services-item");
+var indicatorCircle = document.querySelectorAll(".operational-polygraphy-item-circle");
+var buttonNext = document.querySelector(".operational-polygraphy-next");
+var questionNumber = "question1";
+var operationalPolygraphyServiceNumber = document.querySelector(".operational-polygraphy-service-number");
+var operationalPolygraphyChooseServices = document.querySelector(".operational-polygraphy-service-name");
+var operationalPolygraphyItemsName = document.querySelectorAll(".operational-polygraphy-item-name");
+var operationalPolygraphyQuestion1 = "";
+var operationalPolygraphyAnswer1 = "";
+var operationalPolygraphyQuestion2 = "";
+var operationalPolygraphyAnswer2 = "";
+var operationalPolygraphyQuestion3 = "";
+var operationalPolygraphyAnswer3 = "";
+var operationalPolygraphyQuestion4 = "";
+var operationalPolygraphyAnswer4 = "";
+
+function removeCircleActive() {
+  for (var i = 0; i < indicatorCircle.length; i++) {
+    indicatorCircle[i].classList.remove("operational-polygraphy-item-circle-active")
+  }
+}
+
+operationalPolygraphyItems[0].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[0].classList.add("operational-polygraphy-item-circle-active");
+});
+operationalPolygraphyItems[1].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[1].classList.add("operational-polygraphy-item-circle-active");
+});
+operationalPolygraphyItems[2].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[2].classList.add("operational-polygraphy-item-circle-active");
+});
+operationalPolygraphyItems[3].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[3].classList.add("operational-polygraphy-item-circle-active");
+});
+operationalPolygraphyItems[4].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[4].classList.add("operational-polygraphy-item-circle-active");
+});
+operationalPolygraphyItems[5].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[5].classList.add("operational-polygraphy-item-circle-active");
+});
+operationalPolygraphyItems[6].addEventListener("click", function() {
+  removeCircleActive();
+  indicatorCircle[6].classList.add("operational-polygraphy-item-circle-active");
+});
+
+function changeContentOperationalPolygraphy() {
+  if (questionNumber === "question1") {
+    operationalPolygraphyQuestion1 = operationalPolygraphyChooseServices.innerHTML;
+    operationalPolygraphyServiceNumber.innerHTML = "2"
+    operationalPolygraphyChooseServices.innerHTML = "Описание готового изделия";
+    operationalPolygraphyItemsName[0].innerHTML = "Высота";
+    operationalPolygraphyItemsName[1].innerHTML = "Длина";
+    operationalPolygraphyItemsName[2].innerHTML = "Количество полос";
+    operationalPolygraphyItemsName[3].innerHTML = "Тираж";
+    operationalPolygraphyItems[4].innerHTML = "";
+    operationalPolygraphyItems[5].innerHTML = "";
+    operationalPolygraphyItems[6].innerHTML = "";
+    questionNumber = "question2";
+  } else if (questionNumber === "question2") {
+    operationalPolygraphyServiceNumber.innerHTML = "3"
+    operationalPolygraphyChooseServices.innerHTML = "Есть ли макет (тиф, корел, фотошоп)";
+    operationalPolygraphyItemsName[0].innerHTML = "Да";
+    operationalPolygraphyItemsName[1].innerHTML = "Нет";
+    operationalPolygraphyItems[2].innerHTML = "";
+    operationalPolygraphyItems[3].innerHTML = "";
+    operationalPolygraphyItems[4].innerHTML = "";
+    operationalPolygraphyItems[5].innerHTML = "";
+    operationalPolygraphyItems[6].innerHTML = "";
+    questionNumber = "question3";
+  } else if (questionNumber === "question3") {
+    operationalPolygraphyServiceNumber.innerHTML = "4"
+    operationalPolygraphyChooseServices.innerHTML = "Нужна ли доставка заказа";
+    operationalPolygraphyItemsName[0].innerHTML = "Самовывоз ул. Селезнева 4/10";
+    operationalPolygraphyItemsName[1].innerHTML = "Доставка (указать адрес)";
+    operationalPolygraphyItems[2].innerHTML = "";
+    operationalPolygraphyItems[3].innerHTML = "";
+    operationalPolygraphyItems[4].innerHTML = "";
+    operationalPolygraphyItems[5].innerHTML = "";
+    operationalPolygraphyItems[6].innerHTML = "";
+    questionNumber = "question3";
+  }
+}
+
+buttonNext.addEventListener("click", changeContentOperationalPolygraphy);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

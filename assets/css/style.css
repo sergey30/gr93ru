@@ -290,51 +290,51 @@ body {
   background-image: url(../img/sprite.png);
 }
 
-.business-cards .services-img {
+.services-business-cards .services-img {
   background-position: -145px -225px;
 }
 
-.offset-printing .services-img {
+.services-offset-printing .services-img {
   background-position: -125px -120px;
 }
 
-.operational-polygraphy .services-img {
+.services-operational-polygraphy .services-img {
   background-position: -220px -5px;
 }
 
-.plastic-cards .services-img {
+.services-plastic-cards .services-img {
   background-position: -75px -230px;
 }
 
-.large-format-printing .services-img {
+.services-large-format-printing .services-img {
   background-position: -290px -5px;
 }
 
-.sign-boards .services-img {
+.services-sign-boards .services-img {
   background-position: -220px -140px;
 }
 
-.tablets .services-img {
+.services-tablets .services-img {
   background-position: -350px 0px;
 }
 
-.branding-cars .services-img {
+.services-branding-cars .services-img {
   background-position: -210px -220px;
 }
 
-.souvenirs-promo .services-img {
+.services-souvenirs-promo .services-img {
   background-position: -285px -420px;
 }
 
-.souvenirs-business .services-img {
+.services-souvenirs-business .services-img {
   background-position: -5px -520px;
 }
 
-.souvenirs-vip .services-img {
+.services-souvenirs-vip .services-img {
   background-position: -220px -75px;
 }
 
-.what-to-add .services-img {
+.services-what-to-add .services-img {
   background-position: -290px -60px;
 }
 
@@ -410,7 +410,7 @@ body {
 }
 
 .calculator-services-item:hover {
-  background-color: #e8e8e8;
+  font-weight: bold;
 }
 
 .calculator-item-circle {
@@ -418,7 +418,6 @@ body {
   height: 24px;
   border: solid #06c007;
   border-radius: 50%;
-
 }
 
 .calculator-item-circle-active {
@@ -906,6 +905,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.free-layout-title:hover,
+.free-audit-title:hover {
+  font-weight: bold;
 }
 
 .free-audit-circle,
@@ -969,6 +974,10 @@ footer form input[type="tel"] {
   box-shadow: 0px 0px 1px 1px #c7c7c7;
 }
 
+.free form input[type="radio"] {
+  display: none;
+}
+
 .free form input[type="file"] {
   font-size: 12px;
   margin: 10px auto;
@@ -1016,6 +1025,11 @@ footer form input[type="submit"] {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.free form input[type="submit"]:hover,
+footer form input[type="submit"]:hover {
+  background-color: #fa815b;
 }
 
 /*  */
@@ -1137,6 +1151,157 @@ footer form {
     height: 650px;
   }
  }
+
+
+/*  */
+/*  */
+
+.operational-polygraphy {
+  background-image: url(../img/operational-polygraphy-bg.png);
+  background-repeat: no-repeat;
+}
+
+.operational-polygraphy-container {
+  width: 300px;
+  margin: auto;
+  box-shadow: 0px 0px 1px 1px #c7c7c7;
+}
+
+.operational-polygraphy-description {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.operational-polygraphy-img {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 30px;
+  background-image: url(../img/operational-polygraphy-img.png);
+}
+
+.operational-polygraphy-questions {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/operational-polygraphy-questions-bg.png);
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  padding: 30px;
+}
+
+.operational-polygraphy-title h1 {
+  font-weight: lighter;
+}
+
+.operational-polygraphy-choose-services {
+  font-size: 18px;
+}
+
+.operational-polygraphy-service-number,
+.operational-polygraphy-service-amount {
+  font-weight: bold;
+}
+
+.operational-polygraphy-service-amount {
+  margin-right: 20px;
+}
+
+.operational-polygraphy-services-item {
+  display: flex;
+  line-height: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.operational-polygraphy-services-item:hover {
+  font-weight: bold;
+}
+
+.operational-polygraphy-item-circle {
+  width: 24px;
+  height: 24px;
+  border: solid #06c007;
+  border-radius: 50%;
+}
+
+.operational-polygraphy-item-circle-active {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background-color: #fe6a3c;
+  border: solid #ffffff;
+  box-shadow: 0 0 0 3px #fe6a3c;
+}
+
+.operational-polygraphy-item-name {
+  margin-left: 50px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.operational-polygraphy-next {
+  width: 210px;
+  height: 50px;
+  background-color: #06c007;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.operational-polygraphy-next:hover {
+  background-color: #67bd67;
+}
+
+@media (min-width: 576px) {
+  .operational-polygraphy-container {
+    width: 400px;
+  }
+  .operational-polygraphy-description,
+  .operational-polygraphy-questions {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .operational-polygraphy-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+  }
+  .operational-polygraphy-description,
+  .operational-polygraphy-questions {
+    width: 50%;
+    padding: 40px 40px 80px 40px;
+  }
+ }
+
+ @media (min-width: 992px) {
+   .operational-polygraphy-container {
+     width: 800px;
+   }
+   .operational-polygraphy-description,
+   .operational-polygraphy-questions {
+     padding: 50px 50px 80px 50px;
+   }
+  }
+
+ @media (min-width: 1200px) {
+   .operational-polygraphy-container {
+     width: 900px;
+   }
+   .operational-polygraphy-description,
+   .operational-polygraphy-questions {
+     padding: 60px 60px 80px 60px;
+   }
+  }
+
 
 
 
