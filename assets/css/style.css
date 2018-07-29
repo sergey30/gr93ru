@@ -2,6 +2,12 @@ body {
   font-family: lucida_granderegular;
 }
 
+a,
+a:hover  {
+  color: #000;
+  text-decoration: none;
+}
+
 .header-row-1 {
   display: flex;
   flex-wrap: wrap;
@@ -111,7 +117,6 @@ body {
   padding: 10px;
   background-image: url(../img/slider-bg.png);
   background-position: 100%;
-
 }
 
 .slider-slide {
@@ -314,7 +319,7 @@ body {
   background-position: -220px -140px;
 }
 
-.services-tablets .services-img {
+.services-services-tablets .services-img {
   background-position: -350px 0px;
 }
 
@@ -367,6 +372,7 @@ body {
 .calculator {
   margin: 70px 0;
   background-image: url(../img/calculator-bg.png);
+  background-repeat: no-repeat;
   background-position: 100%;
   border: solid 0.1px #fff;
 }
@@ -493,7 +499,7 @@ body {
 }
 
 .guarantees-items {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .guarantees-item {
@@ -562,7 +568,8 @@ body {
   .guarantees {
     background-image: url(../img/guarantees-bg.png);
     background-repeat: no-repeat;
-    background-position: 500px 5px;
+    background-position: 500px -25px;
+    margin-bottom: -25px;
   }
 }
 
@@ -1156,80 +1163,383 @@ footer form {
 /*  */
 /*  */
 
-.operational-polygraphy {
-  background-image: url(../img/operational-polygraphy-bg.png);
+.business-cards,
+.offset-printing,
+.branding-cars,
+.services-tablets,
+.souvenirs-business {
   background-repeat: no-repeat;
 }
 
-.operational-polygraphy-container {
-  width: 300px;
-  margin: auto;
-  box-shadow: 0px 0px 1px 1px #c7c7c7;
+.operational-polygraphy,
+.plastic-cards,
+.sign-boards,
+.format-printing,
+.souvenirs-promo,
+.souvenirs-vip {
+  padding-top: 50px;
 }
 
-.operational-polygraphy-description {
-  width: 100%;
-  padding: 30px;
+.operational-polygraphy,
+.sign-boards,
+.souvenirs-promo {
+  background-image: url(../img/operational-polygraphy-bg.png);
+}
+
+.business-cards,
+.offset-printing,
+.branding-cars,
+.services-tablets,
+.souvenirs-business {
+  padding-top: 170px;
+}
+
+.business-cards,
+.branding-cars,
+.souvenirs-business {
+  background-image: url(../img/business-cards-bg.png);
+}
+
+.offset-printing,
+.services-tablets {
+  background-image: url(../img/offset-printing-bg.png);
+}
+
+.operational-polygraphy-container,
+.plastic-cards-container,
+.sign-boards-container,
+.format-printing-container,
+.souvenirs-promo-container,
+.souvenirs-vip-container {
+  width: 300px;
+  margin: 0 auto -150px auto;
+  box-shadow: 0px 0px 1px 1px #c7c7c7;
+  position: relative;
+  z-index: 1000;
+}
+
+.business-cards-container,
+.offset-printing-container,
+.branding-cars-container,
+.services-tablets-container,
+.souvenirs-business-container {
+  width: 300px;
+  position: relative;
+  z-index: 0;
+}
+
+.business-cards-container,
+.branding-cars-container,
+.souvenirs-business-container {
+  margin: 20px auto 0px auto;
+}
+
+.offset-printing-container,
+.services-tablets-container {
+  margin: 150px auto 0px auto;
+}
+
+.operational-polygraphy-description,
+.plastic-cards-description,
+.sign-boards-description,
+.format-printing-description,
+.souvenirs-promo-description,
+.souvenirs-vip-description {
   background-color: #fff;
 }
 
-.operational-polygraphy-img {
+.operational-polygraphy-description,
+.business-cards-description,
+.plastic-cards-description,
+.offset-printing,
+.sign-boards-description,
+.branding-cars-description,
+.format-printing-description,
+.services-tablets,
+.souvenirs-promo-description,
+.souvenirs-business-description,
+.souvenirs-vip-description {
+  width: 100%;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.plastic-cards-description,
+.format-printing-description,
+.souvenirs-vip-description {
+  background-color: #06c007;
+}
+
+.operational-polygraphy-img,
+.business-cards-img,
+.plastic-cards-img,
+.offset-printing-img,
+.sign-boards-img,
+.branding-cars-img,
+.format-printing-img,
+.services-tablets-img,
+.souvenirs-promo-img,
+.souvenirs-business-img,
+.souvenirs-vip-img {
   width: 210px;
   height: 210px;
   margin: 0 auto 30px;
+}
+
+.operational-polygraphy-img {
   background-image: url(../img/operational-polygraphy-img.png);
 }
 
-.operational-polygraphy-questions {
+.souvenirs-promo-img {
+  background-image: url(../img/souvenirs-promo-img.png);
+}
+
+.sign-boards-img {
+  background-image: url(../img/sign-boards-img.png);
+}
+
+.plastic-cards-img {
+  background-image: url(../img/plastic-cards-img.png);
+}
+
+.souvenirs-vip-img {
+  background-image: url(../img/souvenirs-vip-img.png);
+}
+
+.format-printing-img {
+  background-image: url(../img/format-printing-img.png);
+}
+
+.business-cards-img {
+  background-image: url(../img/business-cards-img.png);
+}
+
+.souvenirs-business-img {
+  background-image: url(../img/souvenirs-business-img.png);
+}
+
+.branding-cars-img {
+  background-image: url(../img/branding-cars-img.png);
+}
+
+.offset-printing-img {
+  background-image: url(../img/offset-printing-img.png);
+}
+
+.services-tablets-img {
+  background-image: url(../img/services-tablets-img.png);
+}
+
+.operational-polygraphy-arrow-green,
+.business-cards-arrow-orange,
+.plastic-cards-arrow-green,
+.offset-printing-arrow-orange,
+.sign-boards-arrow-green,
+.branding-cars-arrow-orange,
+.format-printing-arrow-green,
+.services-tablets-arrow-orange,
+.souvenirs-promo-arrow-green,
+.souvenirs-business-arrow-orange,
+.souvenirs-vip-arrow-green {
+  display: none;
+  width: 135px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.operational-polygraphy-arrow-green,
+.plastic-cards-arrow-green,
+.sign-boards-arrow-green,
+.format-printing-arrow-green,
+.souvenirs-promo-arrow-green,
+.souvenirs-vip-arrow-green {
+  background-image: url(../img/arrow-green.png);
+  left: 350px;
+  bottom: 30px;
+}
+
+.business-cards-arrow-orange,
+.offset-printing-arrow-orange,
+.branding-cars-arrow-orange,
+.services-tablets-arrow-orange,
+.souvenirs-business-arrow-orange {
+  background-image: url(../img/arrow-orange.png);
+  right: 450px;
+  bottom: 30px;
+}
+
+.operational-polygraphy-questions,
+.business-cards-questions,
+.plastic-cards-questions,
+.offset-printing-questions,
+.sign-boards-questions,
+.branding-cars-questions,
+.format-printing-questions,
+.services-tablets-questions,
+.souvenirs-promo-questions,
+.souvenirs-business-questions,
+.souvenirs-vip-questions {
   width: 100%;
   min-height: 650px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(../img/operational-polygraphy-questions-bg.png);
-  background-repeat: no-repeat;
-  background-color: #efefef;
-  padding: 30px;
+  padding: 40px 10px;
 }
 
-.operational-polygraphy-title h1 {
+.operational-polygraphy-questions,
+.plastic-cards-questions,
+.sign-boards-questions,
+.format-printing-questions,
+.souvenirs-promo-questions,
+.souvenirs-vip-questions {
+  background-repeat: no-repeat;
+}
+
+.operational-polygraphy-questions,
+.sign-boards-questions,
+.souvenirs-promo-questions {
+  background-image: url(../img/operational-polygraphy-questions-bg.png);
+  background-color: #efefef;
+}
+
+.plastic-cards-questions,
+.format-printing-questions,
+.souvenirs-vip-questions {
+  background-image: url(../img/plastic-cards-questions-bg.png);
+  background-color: #fff;
+  background-position: 100% 10%;
+}
+
+.operational-polygraphy-title h1,
+.business-cards-title h1,
+.plastic-cards-title h1,
+.offset-printing-title h1,
+.sign-boards-title h1,
+.branding-cars-title h1,
+.format-printing-title h1,
+.services-tablets-title h1,
+.souvenirs-promo-title h1,
+.souvenirs-business-title h1,
+.souvenirs-vip-title h1 {
   font-weight: lighter;
 }
 
-.operational-polygraphy-choose-services {
+.operational-polygraphy-choose-services,
+.business-cards-choose-services,
+.plastic-cards-choose-services,
+.offset-printing-choose-services,
+.sign-boards-choose-services,
+.branding-cars-choose-services,
+.format-printing-choose-services,
+.services-tablets-choose-services,
+.souvenirs-promo-choose-services,
+.souvenirs-business-choose-services,
+.souvenirs-vip-choose-services {
   font-size: 18px;
 }
 
 .operational-polygraphy-service-number,
-.operational-polygraphy-service-amount {
+.operational-polygraphy-service-amount,
+.business-cards-service-number,
+.business-cards-service-amount,
+.plastic-cards-service-number,
+.plastic-cards-service-amount,
+.offset-printing-service-number,
+.offset-printing-service-amount,
+.sign-boards-service-number,
+.sign-boards-service-amount,
+.branding-cars-service-number,
+.branding-cars-service-amount,
+.format-printing-service-number,
+.format-printing-service-amount,
+.services-tablets-service-number,
+.services-tablets-service-amount,
+.souvenirs-promo-service-number,
+.souvenirs-promo-service-amount,
+.souvenirs-business-service-number,
+.souvenirs-business-service-amount,
+.souvenirs-vip-service-number,
+.souvenirs-vip-service-amount {
   font-weight: bold;
 }
 
-.operational-polygraphy-service-amount {
+.operational-polygraphy-service-amount,
+.business-cards-service-amount,
+.plastic-cards-service-amount,
+.offset-printing-service-amount,
+.sign-boards-service-amount,
+.branding-cars-service-amount,
+.format-printing-service-amount,
+.services-tablets-service-amount,
+.souvenirs-promo-service-amount,
+.souvenirs-business-service-amount,
+.souvenirs-vip-service-amount {
   margin-right: 20px;
 }
 
-.operational-polygraphy-services-item {
+.operational-polygraphy-services-item,
+.business-cards-services-item,
+.plastic-cards-services-item,
+.offset-printing-services-item,
+.sign-boards-services-item,
+.branding-cars-services-item,
+.format-printing-services-item,
+.services-tablets-services-item,
+.souvenirs-promo-services-item,
+.souvenirs-business-services-item,
+.souvenirs-vip-services-item {
   display: flex;
   line-height: 14px;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
-.operational-polygraphy-services-item:hover {
+.operational-polygraphy-services-item:hover,
+.business-cards-services-item:hover,
+.plastic-cards-services-item:hover,
+.offset-printing-services-item:hover,
+.sign-boards-services-item:hover,
+.branding-cars-services-item:hover,
+.format-printing-services-item:hover,
+.services-tablets-services-item:hover,
+.souvenirs-promo-services-item:hover,
+.souvenirs-business-services-item:hover,
+.souvenirs-vip-services-item:hover {
   font-weight: bold;
 }
 
-.operational-polygraphy-item-circle {
-  width: 24px;
+.operational-polygraphy-item-circle,
+.business-cards-item-circle,
+.plastic-cards-item-circle,
+.offset-printing-item-circle,
+.sign-boards-item-circle,
+.branding-cars-item-circle,
+.format-printing-item-circle,
+.services-tablets-item-circle,
+.souvenirs-promo-item-circle,
+.souvenirs-business-item-circle,
+.souvenirs-vip-item-circle {
+  min-width: 24px;
   height: 24px;
   border: solid #06c007;
   border-radius: 50%;
 }
 
-.operational-polygraphy-item-circle[data-checked="true"] {
-  width: 20px;
+.operational-polygraphy-item-circle[data-checked="true"],
+.business-cards-item-circle[data-checked="true"],
+.plastic-cards-item-circle[data-checked="true"],
+.offset-printing-item-circle[data-checked="true"],
+.sign-boards-item-circle[data-checked="true"],
+.branding-cars-item-circle[data-checked="true"],
+.format-printing-item-circle[data-checked="true"],
+.services-tablets-item-circle[data-checked="true"],
+.souvenirs-promo-item-circle[data-checked="true"],
+.souvenirs-business-item-circle[data-checked="true"],
+.souvenirs-vip-item-circle[data-checked="true"] {
+  min-width: 20px;
   height: 20px;
   margin-right: 3px;
   background-color: #fe6a3c;
@@ -1237,16 +1547,52 @@ footer form {
   box-shadow: 0 0 0 3px #fe6a3c;
 }
 
-.operational-polygraphy-item-name {
+.operational-polygraphy-item-name,
+.business-cards-item-name,
+.plastic-cards-item-name,
+.offset-printing-item-name,
+.sign-boards-item-name,
+.branding-cars-item-name,
+.format-printing-item-name,
+.services-tablets-item-name,
+.souvenirs-promo-item-name,
+.souvenirs-business-item-name,
+.souvenirs-vip-item-name {
   margin-left: 50px;
   font-size: 12px;
   line-height: 24px;
 }
 
-.operational-polygraphy-next {
+.operational-polygraphy-next,
+.plastic-cards-next,
+.sign-boards-next,
+.format-printing-next,
+.souvenirs-promo-next,
+.souvenirs-vip-next {
+  background-color: #06c007;
+}
+
+.business-cards-next,
+.offset-printing-next,
+.branding-cars-next,
+.services-tablets-next,
+.souvenirs-business-next {
+  background-color: #fe6a3c;
+}
+
+.operational-polygraphy-next,
+.business-cards-next,
+.plastic-cards-next,
+.offset-printing-next,
+.sign-boards-next,
+.branding-cars-next,
+.format-printing-next,
+.services-tablets-next,
+.souvenirs-promo-next,
+.souvenirs-business-next,
+.souvenirs-vip-next {
   width: 210px;
   height: 50px;
-  background-color: #06c007;
   border-radius: 50px;
   font-size: 18px;
   color: #ffffff;
@@ -1255,52 +1601,427 @@ footer form {
   cursor: pointer;
 }
 
-.operational-polygraphy-next:hover {
+.operational-polygraphy-next:hover,
+.plastic-cards-next:hover,
+.sign-boards-next:hover,
+.format-printing-next:hover,
+.souvenirs-promo-next:hover,
+.souvenirs-vip-next:hover {
   background-color: #67bd67;
 }
 
+.business-cards-next:hover,
+.offset-printing-next:hover,
+.branding-cars-next:hover,
+.services-tablets-next:hover,
+.souvenirs-business-next:hover {
+  background-color: #fa815b;
+}
+
+.operational-polygraphy form input[type="text"],
+.operational-polygraphy form input[type="tel"],
+.business-cards form input[type="text"],
+.business-cards form input[type="tel"],
+.plastic-cards form input[type="text"],
+.plastic-cards form input[type="tel"],
+.offset-printing form input[type="text"],
+.offset-printing form input[type="tel"],
+.sign-boards form input[type="text"],
+.sign-boards form input[type="tel"],
+.branding-cars form input[type="text"],
+.branding-cars form input[type="tel"],
+.format-printing form input[type="text"],
+.format-printing form input[type="tel"],
+.services-tablets form input[type="text"],
+.services-tablets form input[type="tel"],
+.souvenirs-promo form input[type="text"],
+.souvenirs-promo form input[type="tel"],
+.souvenirs-business form input[type="text"],
+.souvenirs-business form input[type="tel"],
+.souvenirs-vip form input[type="text"],
+.souvenirs-vip form input[type="tel"] {
+  margin: 10px auto;
+  width: 100%;
+  height: 48px;
+  border-radius: 48px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 0px 1px 1px #c7c7c7;
+}
+
+.operational-polygraphy textarea,
+.business-cards textarea,
+.plastic-cards textarea,
+.offset-printing textarea,
+.sign-boards textarea,
+.branding-cars textarea,
+.format-printing textarea,
+.services-tablets textarea,
+.souvenirs-promo textarea,
+.souvenirs-business textarea,
+.souvenirs-vip textarea {
+  margin: 10px auto;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  box-shadow: 0px 0px 1px 1px #c7c7c7;
+}
+
+.operational-polygraphy form input[type="file"],
+.business-cards form input[type="file"],
+.plastic-cards form input[type="file"],
+.offset-printing form input[type="file"],
+.sign-boards form input[type="file"],
+.branding-cars form input[type="file"],
+.format-printing form input[type="file"],
+.services-tablets form input[type="file"],
+.souvenirs-promo form input[type="file"],
+.souvenirs-business form input[type="file"],
+.souvenirs-vip form input[type="file"] {
+  font-size: 12px;
+  margin: 10px auto;
+  text-align: right;
+}
+
+.operational-polygraphy form label,
+.business-cards form label,
+.plastic-cards form label,
+.offset-printing form label,
+.sign-boards form label,
+.branding-cars form label,
+.format-printing form label,
+.services-tablets form label,
+.souvenirs-promo form label,
+.souvenirs-business form label,
+.souvenirs-vip form label  {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.operational-polygraphy form label span,
+.business-cards form label span,
+.plastic-cards form label span,
+.offset-printing form label span,
+.sign-boards form label span,
+.branding-cars form label span,
+.format-printing form label span,
+.services-tablets form label span,
+.souvenirs-promo form label span,
+.souvenirs-business form label span,
+.souvenirs-vip form label span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 20px -10px 0;
+  background-image: url(../img/sprite.png);
+  background-position: -360px -65px;
+}
+
+.operational-polygraphy-form-hidden,
+.business-cards-form-hidden,
+.plastic-cards-form-hidden,
+.offset-printing-form-hidden,
+.sign-boards-form-hidden,
+.branding-cars-form-hidden,
+.format-printing-form-hidden,
+.services-tablets-form-hidden,
+.souvenirs-promo-form-hidden,
+.souvenirs-business-form-hidden,
+.souvenirs-vip-form-hidden {
+  width: 105px;
+  height: 30px;
+  position: absolute;
+  top: 48px;
+}
+
+.operational-polygraphy-form-hidden,
+.sign-boards-form-hidden,
+.souvenirs-promo-form-hidden {
+  background-color: #efefef;
+}
+
+.business-cards-form-hidden,
+.offset-printing-form-hidden,
+.plastic-cards-form-hidden,
+.branding-cars-form-hidden,
+.format-printing-form-hidden,
+.services-tablets-form-hidden,
+.souvenirs-business-form-hidden,
+.souvenirs-vip-form-hidden {
+  background-color: #fff;
+}
+
+.operational-polygraphy form input[type="submit"],
+.business-cards form input[type="submit"],
+.plastic-cards form input[type="submit"],
+.offset-printing form input[type="submit"],
+.sign-boards form input[type="submit"],
+.branding-cars form input[type="submit"],
+.format-printing form input[type="submit"],
+.services-tablets form input[type="submit"],
+.souvenirs-promo form input[type="submit"],
+.souvenirs-business form input[type="submit"],
+.souvenirs-vip form input[type="submit"] {
+  margin: 10px auto;
+  width: 100%;
+  height: 48px;
+  border-radius: 48px;
+  text-align: center;
+  line-height: 48px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.operational-polygraphy form input[type="submit"],
+.plastic-cards form input[type="submit"],
+.sign-boards form input[type="submit"],
+.format-printing form input[type="submit"],
+.souvenirs-promo form input[type="submit"],
+.souvenirs-vip form input[type="submit"] {
+  background-color: #06c007;
+}
+
+.business-cards form input[type="submit"],
+.offset-printing form input[type="submit"],
+.branding-cars form input[type="submit"],
+.services-tablets form input[type="submit"],
+.souvenirs-business form input[type="submit"] {
+  background-color: #fe6a3c;
+}
+
+.operational-polygraphy form input[type="submit"]:hover,
+.plastic-cards form input[type="submit"]:hover,
+.sign-boards form input[type="submit"]:hover,
+.format-printing form input[type="submit"]:hover,
+.souvenirs-promo form input[type="submit"]:hover,
+.souvenirs-vip form input[type="submit"]:hover {
+  background-color: #67bd67;
+}
+
+.business-cards form input[type="submit"]:hover,
+.offset-printing form input[type="submit"]:hover,
+.branding-cars form input[type="submit"]:hover,
+.services-tablets form input[type="submit"]:hover,
+.souvenirs-business form input[type="submit"]:hover {
+  background-color: #fa815b;
+}
+
 @media (min-width: 576px) {
-  .operational-polygraphy-container {
+  .operational-polygraphy-container,
+  .business-cards-container,
+  .plastic-cards-container,
+  .offset-printing-container,
+  .sign-boards-container,
+  .branding-cars-container,
+  .format-printing-container,
+  .services-tablets-container,
+  .souvenirs-promo-container,
+  .souvenirs-business-container,
+  .souvenirs-vip-container {
     width: 400px;
   }
   .operational-polygraphy-description,
-  .operational-polygraphy-questions {
+  .operational-polygraphy-questions,
+  .business-cards-description,
+  .business-cards-questions,
+  .plastic-cards-description,
+  .plastic-cards-questions,
+  .offset-printing-description,
+  .offset-printing-questions,
+  .sign-boards-description,
+  .sign-boards-questions,
+  .branding-cars-description,
+  .branding-cars-questions,
+  .format-printing-description,
+  .format-printing-questions,
+  .services-tablets-description,
+  .services-tablets-questions,
+  .souvenirs-promo-description,
+  .souvenirs-promo-questions,
+  .souvenirs-business-description,
+  .souvenirs-business-questions,
+  .souvenirs-vip-description,
+  .souvenirs-vip-questions {
     padding: 40px;
   }
 }
 
 @media (min-width: 768px) {
-  .operational-polygraphy-container {
+  .operational-polygraphy-container,
+  .business-cards-container,
+  .plastic-cards-container,
+  .offset-printing-container,
+  .sign-boards-container,
+  .branding-cars-container,
+  .format-printing-container,
+  .services-tablets-container,
+  .souvenirs-promo-container,
+  .souvenirs-business-container,
+  .souvenirs-vip-container {
     display: flex;
     flex-wrap: wrap;
     width: 700px;
   }
   .operational-polygraphy-description,
-  .operational-polygraphy-questions {
+  .operational-polygraphy-questions,
+  .business-cards-description,
+  .business-cards-questions,
+  .plastic-cards-description,
+  .plastic-cards-questions,
+  .offset-printing-description,
+  .offset-printing-questions,
+  .sign-boards-description,
+  .sign-boards-questions,
+  .branding-cars-description,
+  .branding-cars-questions,
+  .format-printing-description,
+  .format-printing-questions,
+  .services-tablets-description,
+  .services-tablets-questions,
+  .souvenirs-promo-description,
+  .souvenirs-promo-questions,
+  .souvenirs-business-description,
+  .souvenirs-business-questions,
+  .souvenirs-vip-description,
+  .souvenirs-vip-questions {
     width: 50%;
-    padding: 40px 40px 80px 40px;
   }
  }
 
  @media (min-width: 992px) {
-   .operational-polygraphy-container {
-     width: 800px;
+   .operational-polygraphy-container,
+   .business-cards-container,
+   .plastic-cards-container,
+   .offset-printing-container,
+   .sign-boards-container,
+   .branding-cars-container,
+   .format-printing-container,
+   .services-tablets-container,
+   .souvenirs-promo-container,
+   .souvenirs-business-container,
+   .souvenirs-vip-container {
+     width: 900px;
    }
+
+   .operational-polygraphy-arrow-green,
+   .business-cards-arrow-orange,
+   .plastic-cards-arrow-green,
+   .offset-printing-arrow-orange,
+   .sign-boards-arrow-green,
+   .branding-cars-arrow-orange,
+   .format-printing-arrow-green,
+   .services-tablets-arrow-orange,
+   .souvenirs-promo-arrow-green,
+   .souvenirs-business-arrow-orange,
+   .souvenirs-vip-arrow-green {
+     display: block;
+   }
+
    .operational-polygraphy-description,
-   .operational-polygraphy-questions {
+   .operational-polygraphy-questions,
+   .business-cards-description,
+   .business-cards-questions,
+   .plastic-cards-description,
+   .plastic-cards-questions,
+   .offset-printing-description,
+   .offset-printing-questions,
+   .sign-boards-description,
+   .sign-boards-questions,
+   .branding-cars-description,
+   .branding-cars-questions,
+   .format-printing-description,
+   .format-printing-questions,
+   .services-tablets-description,
+   .services-tablets-questions,
+   .souvenirs-promo-description,
+   .souvenirs-promo-questions,
+   .souvenirs-business-description,
+   .souvenirs-business-questions,
+   .souvenirs-vip-description,
+   .souvenirs-vip-questions {
      padding: 50px 50px 80px 50px;
    }
   }
 
  @media (min-width: 1200px) {
-   .operational-polygraphy-container {
+   .operational-polygraphy-container,
+   .business-cards-container,
+   .plastic-cards-container,
+   .offset-printing-container,
+   .sign-boards-container,
+   .branding-cars-container,
+   .format-printing-container,
+   .services-tablets-container,
+   .souvenirs-promo-container,
+   .souvenirs-business-container,
+   .souvenirs-vip-container {
      width: 900px;
    }
+
+   .operational-polygraphy-container,
+   .plastic-cards-container,
+   .sign-boards-container,
+   .format-printing-container,
+   .souvenirs-promo-container,
+   .souvenirs-vip-container {
+     margin-top: -30px;
+   }
+
+   .operational-polygraphy,
+   .plastic-cards,
+   .sign-boards,
+   .format-printing,
+   .souvenirs-promo,
+   .souvenirs-vip {
+     background-repeat: no-repeat;
+   }
+
    .operational-polygraphy-description,
-   .operational-polygraphy-questions {
-     padding: 60px 60px 80px 60px;
+   .operational-polygraphy-questions,
+   .business-cards-description,
+   .business-cards-questions,
+   .plastic-cards-description,
+   .plastic-cards-questions,
+   .offset-printing-description,
+   .offset-printing-questions,
+   .sign-boards-description,
+   .sign-boards-questions,
+   .branding-cars-description,
+   .branding-cars-questions,
+   .format-printing-description,
+   .format-printing-questions,
+   .services-tablets-description,
+   .services-tablets-questions,
+   .souvenirs-promo-description,
+   .souvenirs-promo-questions,
+   .souvenirs-business-description,
+   .souvenirs-business-questions,
+   .souvenirs-vip-description,
+   .souvenirs-vip-questions {
+     padding: 50px 60px 70px 60px;
    }
   }
+
+
+
+
+
+
+
+
+
 
 
 
