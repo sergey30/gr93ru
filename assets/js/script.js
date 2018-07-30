@@ -148,13 +148,13 @@ function operationalPolygraphyChangeContent() {
     }
     operationalPolygraphyServiceNumber.innerHTML = "2";
     operationalPolygraphyChooseServices.innerHTML = "Описание готового изделия";
-    operationalPolygraphyItemsName[0].innerHTML = '<input type="text" name="" value="" placeholder="Высота" id="a">';
+    operationalPolygraphyItemsName[0].innerHTML = '<input type="text" name="" value="" placeholder="Высота">';
     operationalPolygraphyItemsName[1].innerHTML = '<input type="text" name="" value="" placeholder="Длина">';
     operationalPolygraphyItemsName[2].innerHTML = '<input type="text" name="" value="" placeholder="Количество полос">';
     operationalPolygraphyItemsName[3].innerHTML = '<input type="text" name="" value="" placeholder="Тираж">';
-    operationalPolygraphyItems[4].innerHTML = "";
-    operationalPolygraphyItems[5].innerHTML = "";
-    operationalPolygraphyItems[6].innerHTML = "";
+    operationalPolygraphyItems[4].setAttribute("hidden", true);
+    operationalPolygraphyItems[5].setAttribute("hidden", true);
+    operationalPolygraphyItems[6].setAttribute("hidden", true);
     operationalPolygraphyIndicatorCircle[0].setAttribute("hidden", true);
     operationalPolygraphyIndicatorCircle[1].setAttribute("hidden", true);
     operationalPolygraphyIndicatorCircle[2].setAttribute("hidden", true);
@@ -1937,9 +1937,134 @@ if (souvenirsVipButtonNext !== null) {
 
 
 
+//////////// animation scroll //////////////////////////////
 
 
+if (document.querySelector(".slider") !== null) {
 
+  if (document.querySelector("html").clientHeight > 1000) {
+    document.querySelector(".slider").classList.add("move-right");
+    document.querySelector(".services").classList.add("move-left");
+    if ((document.documentElement.scrollTop > 600) || (window.pageYOffset > 600) ) {
+      document.querySelector(".calculator").classList.add("move-right");
+    }
+    if ((document.documentElement.scrollTop > 1300) || (window.pageYOffset > 1300)) {
+      document.querySelector(".guarantees").classList.add("move-left");
+    }
+    if ((document.documentElement.scrollTop > 2100) || (window.pageYOffset > 2100)) {
+      document.querySelector(".review").classList.add("move-right");
+    }
+    if ((document.documentElement.scrollTop > 2800) || (window.pageYOffset > 2800)) {
+      document.querySelector(".examples").classList.add("move-left");
+    }
+    if ((document.documentElement.scrollTop > 3400) || (window.pageYOffset > 3400)) {
+      document.querySelector(".free").classList.add("move-right");
+    }
+
+    window.onscroll = function () {
+      if ((document.documentElement.scrollTop > 600) || (window.pageYOffset > 600) ) {
+        document.querySelector(".calculator").classList.add("move-right");
+      }
+      if ((document.documentElement.scrollTop > 1300) || (window.pageYOffset > 1300)) {
+        document.querySelector(".guarantees").classList.add("move-left");
+      }
+      if ((document.documentElement.scrollTop > 2100) || (window.pageYOffset > 2100)) {
+        document.querySelector(".review").classList.add("move-right");
+      }
+      if ((document.documentElement.scrollTop > 2800) || (window.pageYOffset > 2800)) {
+        document.querySelector(".examples").classList.add("move-left");
+      }
+      if ((document.documentElement.scrollTop > 3400) || (window.pageYOffset > 3400)) {
+        document.querySelector(".free").classList.add("move-right");
+      }
+  }
+}
+}
+
+
+if (document.querySelector(".operational-polygraphy") !== null) {
+  if (document.querySelector("html").clientHeight > 1000) {
+    document.querySelector(".operational-polygraphy").classList.add("move-right");
+
+    if ((document.documentElement.scrollTop > 50) || (window.pageYOffset > 50) ) {
+      document.querySelector(".business-cards").classList.add("move-left");
+    }
+    if ((document.documentElement.scrollTop > 800) || (window.pageYOffset > 800)) {
+      document.querySelector(".plastic-cards").classList.add("move-right");
+    }
+    if ((document.documentElement.scrollTop > 1500) || (window.pageYOffset > 1500)) {
+      document.querySelector(".offset-printing").classList.add("move-left");
+    }
+
+    window.onscroll = function () {
+      if ((document.documentElement.scrollTop > 50) || (window.pageYOffset > 50) ) {
+        document.querySelector(".business-cards").classList.add("move-left");
+      }
+      if ((document.documentElement.scrollTop > 800) || (window.pageYOffset > 800)) {
+        document.querySelector(".plastic-cards").classList.add("move-right");
+      }
+      if ((document.documentElement.scrollTop > 1500) || (window.pageYOffset > 1500)) {
+        document.querySelector(".offset-printing").classList.add("move-left");
+      }
+    }
+  }
+}
+
+
+if (document.querySelector(".sign-boards") !== null) {
+  if (document.querySelector("html").clientHeight > 1000) {
+    document.querySelector(".sign-boards").classList.add("move-right");
+
+    if ((document.documentElement.scrollTop > 50) || (window.pageYOffset > 50) ) {
+      document.querySelector(".branding-cars").classList.add("move-left");
+    }
+    if ((document.documentElement.scrollTop > 800) || (window.pageYOffset > 800)) {
+      document.querySelector(".format-printing").classList.add("move-right");
+    }
+    if ((document.documentElement.scrollTop > 1500) || (window.pageYOffset > 1500)) {
+      document.querySelector(".services-tablets").classList.add("move-left");
+    }
+
+    window.onscroll = function () {
+      if ((document.documentElement.scrollTop > 50) || (window.pageYOffset > 50) ) {
+        document.querySelector(".branding-cars").classList.add("move-left");
+      }
+      if ((document.documentElement.scrollTop > 800) || (window.pageYOffset > 800)) {
+        document.querySelector(".format-printing").classList.add("move-right");
+      }
+      if ((document.documentElement.scrollTop > 1500) || (window.pageYOffset > 1500)) {
+        document.querySelector(".services-tablets").classList.add("move-left");
+      }
+    }
+  }
+}
+
+
+if (document.querySelector(".souvenirs-promo") !== null) {
+  if (document.querySelector("html").clientHeight > 1000) {
+    document.querySelector(".souvenirs-promo").classList.add("move-right");
+
+    if ((document.documentElement.scrollTop > 50) || (window.pageYOffset > 50) ) {
+      document.querySelector(".souvenirs-business").classList.add("move-left");
+    }
+    if ((document.documentElement.scrollTop > 800) || (window.pageYOffset > 800)) {
+      document.querySelector(".souvenirs-vip").classList.add("move-right");
+    }
+
+
+    window.onscroll = function () {
+      if ((document.documentElement.scrollTop > 50) || (window.pageYOffset > 50) ) {
+        document.querySelector(".souvenirs-business").classList.add("move-left");
+      }
+      if ((document.documentElement.scrollTop > 800) || (window.pageYOffset > 800)) {
+        document.querySelector(".souvenirs-vip").classList.add("move-right");
+      }
+
+    }
+  }
+}
+
+////////////////////////////////////////
 
 
 

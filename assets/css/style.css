@@ -8,6 +8,10 @@ a:hover  {
   text-decoration: none;
 }
 
+header {
+  margin-bottom: 20px;
+}
+
 .header-row-1 {
   display: flex;
   flex-wrap: wrap;
@@ -2014,6 +2018,56 @@ footer form {
    }
   }
 
+/*  */
+
+.calculator,
+.guarantees,
+.review,
+.examples,
+.free,
+.operational-polygraphy,
+.business-cards,
+.plastic-cards,
+.offset-printing,
+.sign-boards,
+.branding-cars,
+.format-printing,
+.services-tablets,
+.souvenirs-promo,
+.souvenirs-business,
+.souvenirs-vip {
+  opacity: 0;
+}
+
+.move-right {
+  opacity: 1;
+  position: relative;
+  animation: move-right 1s ease-in-out ;
+}
+
+@keyframes move-right {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.move-left {
+  opacity: 1;
+  position: relative;
+  animation: move-left 1s ease-in-out ;
+}
+
+@keyframes move-left {
+  0% {
+    right: -2000px;;
+  }
+  100% {
+    right: 0;
+  }
+}
 
 
 
@@ -2022,16 +2076,10 @@ footer form {
 
 
 
-
-
-
-
-
-
-@media (min-width: 576px) { ... }
+/* @media (min-width: 576px) { ... }
 
 @media (min-width: 768px) { ... }
 
 @media (min-width: 992px) { ... }
 
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { ... } */
